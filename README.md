@@ -98,4 +98,4 @@ Clearing browser storage or using a different browser/profile will remove or iso
 
 ## License
 
-License: unspecified.
+WTFPL - Do What The Fuck You Want To Public License.
