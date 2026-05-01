@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Dashboard</title>
+    <link rel="stylesheet" href="./common/css/style.css">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            background: #000;
+        }
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+        .menu-card {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 40px 20px;
+            text-decoration: none;
+            color: #fff;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .menu-card:hover {
+            transform: translateY(-5px);
+            border-color: #fff;
+        }
+        .icon { font-size: 40px; margin-bottom: 15px; display: block; }
+        .label { font-size: 18px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .disabled { opacity: 0.3; pointer-events: none; }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 style="margin-bottom: 50px; font-size: 32px;">3i EE Dashboard</h1>
+
+        <div class="menu-grid">
+            <a href="./electricity/index.html" class="menu-card">
+                <span class="icon">⚡</span>
+                <span class="label">Electricity</span>
+            </a>
+
+            <a href="./gas/index.html" class="menu-card">
+                <span class="icon">🔥</span>
+                <span class="label">Gas</span>
+            </a>
+
+            <div class="menu-card disabled">
+                <span class="icon">☀️</span>
+                <span class="label">Solar PV</span>
+                <div style="font-size:12px; margin-top:10px; color:#666;">Working on it</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
