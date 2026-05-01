@@ -2,6 +2,8 @@
 
 A static browser dashboard for tracking electricity and natural gas bills, visualizing consumption and unit costs, and keeping data locally in the browser.
 
+apcaruso.github.io/e-dashboard/
+
 ## Dashboards
 
 - Electricity
