@@ -71,20 +71,6 @@ Open:
 - `http://localhost:8000/electricity/`
 - `http://localhost:8000/gas/`
 
-## GitHub Pages Deployment
-
-This repository includes a GitHub Pages workflow at `.github/workflows/pages.yml`.
-
-The workflow uploads the repository root (`.`) as the static site artifact, because `index.html` is already at the repository root. On GitHub Pages, the deployed root opens the dashboard home directly.
-
-To deploy:
-
-1. Push to the configured default branch (`master` in the current workflow).
-2. In the GitHub repository settings, set Pages source to GitHub Actions.
-3. Wait for the `Deploy static site to GitHub Pages` workflow to finish.
-
-If the repository default branch is changed to `main`, update the branch name in `.github/workflows/pages.yml`.
-
 ## Data And Privacy
 
 The app stores bill data locally in the browser through `localStorage`. There is no backend, and the app itself does not send bill data to a server.
